@@ -12,12 +12,12 @@ function buscarCEP() {
         let obj = JSON.parse(this.responseText)
 
         //PEGUEI OS VALORES
-        let logradouro = obj.logradouro
+        let endereco = obj.logradouro
         let bairro = obj.bairro
         let cidade = obj.localidade
         let sigla = obj.uf
         let estado = obj.estado
 
-        document.getElementById('texto').innerHTML = "Endereço: " +logradouro+ "<br> Bairro: "+bairro+"<br> Cidade: "+cidade+"<br> Estado: "+estado+"<br> UF: "+sigla
+        document.getElementById('texto').innerHTML = "Endereço: " +endereco+ "<br> Bairro: "+bairro+"<br> Cidade: "+cidade+"<br> Estado: "+estado+"<br> UF: "+sigla
     }
 }
